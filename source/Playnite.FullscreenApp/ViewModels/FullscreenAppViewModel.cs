@@ -1183,6 +1183,9 @@ namespace Playnite.FullscreenApp.ViewModels
 
         private void OnFullscreenViewChanged(FullscreenView newView)
         {
+            if (DesignerTools.IsInDesignMode)
+                return;
+
             var args = new OnFullscreenViewChangedArgs()
             {
                 NewView = newView
