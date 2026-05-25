@@ -3138,7 +3138,7 @@ namespace Playnite
         /// </summary>
         public const string UrlNavigationMessage = "LOCUrlNavigationMessage";
         /// <summary>
-        /// The selected image(s) might be too large for optimal performance. Using very large images can result in worse UI responsiveness and increased memory usage. 
+        /// The selected image(s) might be too large for optimal performance. Using very large images can result in worse UI responsiveness and increased memory usage.
         /// </summary>
         public const string GameImageSizeWarning = "LOCGameImageSizeWarning";
         /// <summary>
@@ -4489,5 +4489,13 @@ namespace Playnite
         /// No controllers detected
         /// </summary>
         public const string NoControllersDetected = "LOCNoControllersDetected";
+        /// <summary>
+        /// Default source
+        /// </summary>
+        public const string DefaultWebImageSource = "LOCDefaultWebImageSource";
+        /// <summary>
+        /// Default source
+        /// </summary>
+        public const string WebImageDownloadError = "LOCWebImageDownloadError";
     }
 }

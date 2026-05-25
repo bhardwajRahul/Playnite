@@ -27,6 +27,12 @@ using Playnite.SDK.Plugins;
 
 namespace Playnite
 {
+    public enum WebImageSearchSource
+    {
+        Google,
+        DuckDuckGo
+    }
+
     public enum DesktopSettingsPage
     {
         General = 0,
@@ -2223,6 +2229,9 @@ namespace Playnite
 
         private SafeSearchSettings webImageSafeSearch = SafeSearchSettings.Default;
         public SafeSearchSettings WebImageSafeSearch { get => webImageSafeSearch; set => SetValue(ref webImageSafeSearch, value); }
+
+        private WebImageSearchSource defaultWebImageSource = WebImageSearchSource.Google;
+        public WebImageSearchSource DefaultWebImageSource { get => defaultWebImageSource; set => SetValue(ref defaultWebImageSource, value); }
 
         public Guid LastSelectedGame { get; set; }
 
